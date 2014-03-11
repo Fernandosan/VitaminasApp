@@ -9,17 +9,18 @@ html, body{
 }
 
 li {
-    height: 44px;
+    height: 95px;
     background: #FFB547;
     color: #CC7A00;
     border-bottom: 1px solid;
 	width: 100%;
 	overflow: hidden;
-	list-style: none;
-	 
+	list-style: none;	 
 }
+
+
 li a {
-	height: 44px;
+	height: 95px;
 	background: #FFB547;
 	color: white;
 	width: 100%;
@@ -29,10 +30,10 @@ li a {
 	white-space: nowrap;
 	overflow: hidden;
 	display: block;
-    font-size: 20px;
+    font-size: 60px;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-transform: translateZ(0);
-  line-height: 44px;
+  line-height: 95px;
   
 }
 li a.active {
@@ -40,21 +41,46 @@ li a.active {
   background-color: green;
   -webkit-box-shadow: #5cc801 0 1px 0px inset;
   box-shadow: #5cc801 0 1px 0px inset;
-  color: black;
+  color: white;
   text-shadow: #3c8101 0 -1px 0;
-  line-height: 44px;
+  line-height: 95px;
   }
   
-h1, footer,header {
+h1, footer, header {
 	border-bottom: 1px solid;
-	height: 44px;
+	height: 93px;
 	background: #FFA319;
-	font-size: 20px;
-    text-align: center;
-	line-height: 44px;
+	font-size: 60px;
+    color: #CC7A00;
+	text-align: center;
+	line-height: 95px;
     margin: 0px;
-	color: black;
 	overflow: hidden;
 	list-style: none;
 }
 
+/* BOX PRINCIPAL – SLIDES */
+#box, #box1, #box2{
+width:100%; 
+height:100%; 
+margin:0 auto; 
+position:relative; 
+background-color: #fff; 
+border-bottom: 1px solid #4b8874; 
+
+}
+
+#box-centro, #box-centro1, #box-centro2{ 
+width:950px; 
+height:465px; margin:0 auto; position:relative; border: 5px solid #fff;
+/*SOMBRA EM TODOS NAVEGADORES*/
+box-shadow: 1px 1px 10px #000;
+-moz-box-shadow: 1px 1px 10px #000;
+-webkit-box-shadow: 1px 1px 10px #000;
+-khtml-box-shadow: 1px 1px 10px #000;
+/*BORDAS ARREDONDADAS EM TODOS NAVEGADORES*/
+border-radius: 50px 0px 50px 0px;
+-moz-border-radius: 50px 0px 50px 0px;
+-webkit-border-radius: 50px 0px 50px 0px;
+-khtml-border-radius: 50px 0px 50px 0px;
+}
