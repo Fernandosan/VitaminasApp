@@ -2,14 +2,12 @@
 <html>
 	<head>
 		<title>Vitaminas</title>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<link href="index.css" rel="stylesheet" type="text/css"></link>
-		<link href="jqtouch/themes/css/jqtouch.css" rel="stylesheet" type="text/css"></link>
-		<!-- <style type="text/css" media="screen">@import "../../themes/css/jqtouch.css";</style> -->
+		<style type="text/css" media="screen">@import "jqtouch/themes/css/jqtouch.css";</style>
 		<script src="jqtouch/src/lib/zepto.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="jqtouch/src/jqtouch.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="../../extensions/jqt.autotitles.min.js" type="application/x-javascript" charset="utf-8"></script>
-		
+		<link href="index.css" rel="stylesheet" type="text/css"></link>
+		<meta charset="utf-8">
 		<script>
 			var jQT = new $.jQTouch({    // `new` keyword is now mandatory (was optional before rc6).
 				icon: 'jqtouch.png',
@@ -21,180 +19,177 @@
 	<body>
 		<!-- PÁGINA INICIAL -->
 		<div id="paginaInicial">
-			<header><h1>Vitaminas </h1></header>
+			<header class="toolbar">Vitaminas</header>
+			<ul class="rounded">
 			<li><a href="#paginaVitaminaA" >Vitamina A</a></li>
-			<li><a href="#paginaVitaminaB" >Vitamina B</a></li>
+			<li><a href="#paginaVitaminaB3" >Vitamina B3</a></li>
 			<li><a href="#paginaVitaminaC" >Vitamina C</a></li>
 			<li><a href="#paginaVitaminaD" >Vitamina D</a></li>
 			<li><a href="#paginaVitaminaE" >Vitamina E</a></li>
-			<footer><h1>Footer</h1></footer>
+			<li><a href="#paginaVitaminaK" >Vitamina K</a></li>
+			</ul>
 		</div>
 		
-		<!-- PÁGINA DA VITAMINA A -->
+		<!-- PÁGINA DA VITAMINA A *************************************************************************************************************************-->
 		<div id="paginaVitaminaA">
-			<header><h1>Vitamina A</h1></header>
-			<li><a>O que é</a></li>
-			<li><a href="#funcaoA">Pra que serve</a></li>
-			<li><a href="#imgA">Alimentos</a></li>
-			<li><a>Bla bla</a></li>
-			<li><a>bla bla</a></li>
-			<footer><h1>Footer</h1></footer>
+			<header class="toolbar">Vitamina A</header>
+			<ul class="rounded">
+				<li><a>Função</a></li>
+				<li><p>Atua sobre a pele, a retina dos olhos e as mucosas; aumenta a resistência aos agentes infecciosos</p></li>
+				<li><a>Sua presença possibilita</a></li>
+				<li><p>Fortalecimento de dentes, unhas e cabelos; prevenção de doenças respiratórias</p></li>
+				<li><a>Fontes</a></li>
+				<li><p>Manteiga, leite, gema de ovo, fígado, espinafre, chicória, tomate, mamão, batata, cará, abóbora</p></li>
+				
+				<!--Alimentos A -->
+				<div id="imgA">
+						<div id="box"> 		
+							<div id="box-centro">
+								<script src="jqtouch/src/lib/jquery-1.7.min.js" type="text/javascript"></script> 
+								<script src="js/jquery.cross-slide.js" type="text/javascript"></script>
+									
+								<script type="text/javascript">
+									$(function() {
+										
+									$('#box-centro').crossSlide({
+										sleep: 3,
+										fade: 0.3,
+
+										}, [                 
+										
+										{ src: 'imagens/A/1.jpg' },
+										{ src: 'imagens/A/2.jpg'  },                    
+										{ src: 'imagens/A/3.jpg'  },
+										{ src: 'imagens/A/4.jpg'  },
+										{ src: 'imagens/A/5.jpg'  },
+
+										]);					
+									});
+								</script>
+							</div>
+						</div>  
+				</div>
 		</div>
 		
-		<!-- PÁGINA DA VITAMINA B -->
-		<div id="paginaVitaminaB">
-			<header><h1>Vitamina B</h1></header>
-			<li><a>O que é</a></li>
-			<li><a>Pra que serve</a></li>
-			<li><a href="#imgB">Alimentos</a></li>
-			<li><a>Bla bla</a></li>
-			<li><a>bla bla</a></li>
-			<footer><h1>Footer</h1></footer>
+		
+		
+		
+		<!-- PÁGINA DA VITAMINA B3 *************************************************************************************************************************-->
+		<div id="paginaVitaminaB3">
+			<header class="toolbar">Vitamina B3</header>
+			<ul class="rounded">
+				<li><a>Função</a></li>
+				<li><p>Possibilita o metabolismo das gorduras e carboidratos</p></li>
+				<li><a>Sua presença possibilita</a></li>
+				<li><p>Produção de hormônios sexuais; auxílio no processo digestivo</p></li>
+				<li><a>Fontes</a></li>
+				<li><p>Lêvedo, fígado, rim, coração, ovo, cereais integrais</p></li>
+				
+				<!--Alimentos B3 -->
+				<div id="imgB3">
+						<div id="box"> 		
+							<div id="box-centro1">
+								<script src="jqtouch/src/lib/jquery-1.7.min.js" type="text/javascript"></script> 
+								<script src="js/jquery.cross-slide.js" type="text/javascript"></script>
+									
+								<script type="text/javascript">
+									$(function() {
+										
+									$('#box-centro1').crossSlide({
+										sleep: 3,
+										fade: 0.3,
+
+										}, [                 
+										
+										{ src: 'imagens/vitB3/6.jpg'  },
+										{ src: 'imagens/vitB3/7.jpg'  },                    
+										{ src: 'imagens/vitB3/8.jpg'  },
+										{ src: 'imagens/vitB3/9.jpg'  },
+										{ src: 'imagens/vitB3/10.jpg' },
+
+										]);					
+									});
+								</script>
+							</div>
+						</div>  
+				</div>
 		</div>
 		
-		<!-- PÁGINA DA VITAMINA C -->
+		<!-- PÁGINA DA VITAMINA C ******************************************************************************************************************************-->
 		<div id="paginaVitaminaC">
-			<header><h1>Vitamina C</h1></header>
-			<li><a>O que é</a></li>
-			<li><a>Pra que serve</a></li>
-			<li><a href="#imgC">Alimentos</a></li>
-			<li><a>Bla bla</a></li>
-			<li><a>bla bla</a></li>
-			<footer><h1>Footer</h1></footer>
+			<header class="toolbar">Vitamina C</header>
+			<ul class="rounded">
+				<li><a>Função</a></li>
+				<li><p>Conserva os vasos sanguíneos e os tecidos; ajuda na absorção do ferro; aumenta a resistência a infecções; favorece a cicatrização e o crescimento normal dos ossos</p></li>
+				<li><a>Sua presença possibilita</a></li>
+				<li><p>Produção de colágeno; redução do efeito de substâncias que causam alergia; previne o resfriado</p></li>
+				<li><a>Fontes</a></li>
+				<li><p>Limão, laranja, abacaxi, mamão, goiaba, caju, alface, agrião, tomate, cenoura, pimentão, nabo, espinafre</p></li>
+				
+				<!--Alimentos B3 -->
+				<div id="imgC">
+						<div id="box"> 		
+							<div id="box-centro2">
+								<script src="jqtouch/src/lib/jquery-1.7.min.js" type="text/javascript"></script> 
+								<script src="js/jquery.cross-slide.js" type="text/javascript"></script>
+									
+								<script type="text/javascript">
+									$(function() {
+										
+									$('#box-centro2').crossSlide({
+										sleep: 3,
+										fade: 0.3,
+
+										}, [                 
+										
+										{ src: 'imagens/vitC/1.jpg' },
+										{ src: 'imagens/vitC/2.jpg'  },                    
+										{ src: 'imagens/vitC/3.jpg'  },
+										{ src: 'imagens/vitC/4.jpg'  },
+										{ src: 'imagens/vitC/5.jpg'  },
+
+										]);					
+									});
+								</script>
+							</div>
+						</div>  
+				</div>
 		</div>
 		
-		<!-- PÁGINA DA VITAMINA D -->
+		<!-- PÁGINA DA VITAMINA D ****************************************************************************************************************************-->
 		<div id="paginaVitaminaD">
-			<header><h1>Vitamina D</h1></header>
-			<li><a>O que é</a></li>
-			<li><a>Pra que serve</a></li>
-			<li><a>Alimentos</a></li>
-			<li><a>Bla bla</a></li>
-			<li><a>bla bla</a></li>
-			<footer><h1>Footer</h1></footer>
+			<header class="toolbar">Vitamina D</header>
+			<ul class="rounded">
+				<li><a>Função</a></li>
+				<li><p>Fixa o cálcio e o fósforo em dentes e ossos e é muito importante para crianças, gestantes e mães que amamentam</p></li>
+				<li><a>Sua presença possibilita</a></li>
+				<li><p>Prevenção da osteoporose</p></li>
+				<li><a>Fontes</a></li>
+				<li><p>Óleo de fígado de peixes, leite, manteiga, gema de ovo, raios de sol</p></li>
 		</div>
 		
-		<!-- PÁGINA DA VITAMINA E -->
+		<!-- PÁGINA DA VITAMINA E ****************************************************************************************************************************-->
 		<div id="paginaVitaminaE">
-			<header><h1>Vitamina E</h1></header>
-			<li><a>O que é</a></li>
-			<li><a>Pra que serve</a></li>
-			<li><a>Alimentos</a></li>
-			<li><a>Bla bla</a></li>
-			<li><a>bla bla</a></li>
-			<footer><h1>Footer</h1></footer>
-		</div>
-		<div id="funcaoA">
-			<header><h1>Pra que serve</h1></header>
-			<li class="funcaoA">Participa da defesa imunológica, cornificação da pele e mucosas, constituição da pele, ossos, 
-			cabelo e unhas, promove o processo de diferenciação celular e participa do desenvolvimento embrionário.</br></li>
-			
-			<footer><h1>Footer</h1></footer>
+			<header class="toolbar">Vitamina E</header>
+			<ul class="rounded">
+				<li><a>Função</a></li>
+				<li><p>Antioxidante; favorece o metabolismo muscular e auxilia a fertilidade</p></li>
+				<li><a>Sua presença possibilita</a></li>
+				<li><p>Alívio da fadiga; retardamento do envelhecimento; prevenção de abortos espontâneos e cãibras nas pernas</p></li>
+				<li><a>Fontes</a></li>
+				<li><p>Germe de trigo, nozes, carnes, amendoim, óleo, gema de ovo</p></li>
 		</div>
 		
-		<!--Alimentos A -->
-		<div id="imgA">
-			<header><h1>Alimentos A</h1></header>
-			<div id="box">   
-			<div id="box-centro">
-              <script src="jqtouch/src/lib/jquery-1.7.min.js" type="text/javascript"></script> 
-				<script src="js/jquery.cross-slide.js" type="text/javascript"></script>
-                
-                <script type="text/javascript">
-                  $(function() {
-                    
-                    $('#box-centro').crossSlide({
-                      sleep: 3,
-                      fade: 0.3,
-
-                      }, [                 
-                    
-                      { src: 'imagens/A/1.jpg' },
-                      { src: 'imagens/A/2.jpg'  },                    
-                      { src: 'imagens/A/3.jpg'  },
-                      { src: 'imagens/A/4.jpg'  },
-                      { src: 'imagens/A/5.jpg'  },
-
-                      
-                      
-                    ]);
-					
-                  });
-                </script>
-
-      </div>
-    </div>  
-			<footer><h1>Footer</h1></footer>
-		</div>
-		
-		<!--Alimentos B -->
-		<div id="imgB">
-			<header><h1>Alimentos B</h1></header>
-			<div id="box1">   
-			<div id="box-centro1">
-              <script src="jqtouch/src/lib/jquery-1.7.min.js" type="text/javascript"></script> 
-				<script src="js/jquery.cross-slide.js" type="text/javascript"></script>
-                
-                <script type="text/javascript">
-                  $(function() {
-                    
-                    $('#box-centro1').crossSlide({
-                      sleep: 2,
-                      fade: 0.5,
-
-                      }, [                 
-                    
-                      { src: 'imagens/vitB3/6.jpg' },
-                      { src: 'imagens/vitB3/7.jpg'  },                    
-                      { src: 'imagens/vitB3/8.jpg'  },
-                      { src: 'imagens/vitB3/9.jpg'  },
-                      { src: 'imagens/vitB3/10.jpg'  },
-
-                      
-                      
-                    ]);
-					
-                  });
-                </script>
-
-      </div>
-    </div>  
-			<footer><h1>Footer</h1></footer>
-		</div>
-		
-		<!--Alimentos C -->
-		<div id="imgC">
-			<header><h1>Alimentos C</h1></header>
-			<div id="box2">   
-			<div id="box-centro2">
-              <script src="jqtouch/src/lib/jquery-1.7.min.js" type="text/javascript"></script> 
-				<script src="js/jquery.cross-slide.js" type="text/javascript"></script>
-                
-                <script type="text/javascript">
-                  $(function() {
-                    
-                    $('#box-centro2').crossSlide({
-                      sleep: 2,
-                      fade: 0.5,
-
-                      }, [                 
-                    
-                      { src: 'imagens/vitC/1.jpg' },
-                      { src: 'imagens/vitC/2.jpg'  },                    
-                      { src: 'imagens/vitC/3.jpg'  },
-                      { src: 'imagens/vitC/4.jpg'  },
-                      { src: 'imagens/vitC/5.jpg'  },
-
-                      
-                      
-                    ]);
-					
-                  });
-                </script>
-
-      </div>
-    </div>  
-			<footer><h1>Footer</h1></footer>
+		<!-- PÁGINA DA VITAMINA K ******************************************************************************************************************************-->
+		<div id="paginaVitaminaK">
+			<header class="toolbar">Vitamina K</header>
+			<ul class="rounded">
+				<li><a>Função</a></li>
+				<li><p>Essencial para que o organismo produza protombrina, uma substância indispensável para a coagulação do sangue</p></li>
+				<li><a>Sua presença possibilita</a></li>
+				<li><p>Formação de determinadas proteínas</p></li>
+				<li><a>Fontes</a></li>
+				<li><p>Fígado, verduras, ovo</p></li>
 		</div>
 		
 	</body>
